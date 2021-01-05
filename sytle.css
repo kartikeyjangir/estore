@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #ffffff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.header row{
+
+    margin-top: 30px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.smallcontainer{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.col-4{
+    flex-basis: 22%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin:0 auto 80px;
+    position: relative;
+    color: #555;
+    line-height: 60px;
+}
+
+.title::after{
+    content: ' ';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+
+
+/* --------------------offer--------------- */
+.offer{
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-3 .offer-img{
+    padding: 50px;
+}
+
+
+.small{
+    color: #555;
+}
+
+
+/* ---------testimonial------------ */
+.testimonial{
+    margin-top: 80px;
+   
+}
+
+.testimonial .col-3{
+    text-align:center;
+    padding: 40px 1px;
+   box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+   cursor: pointer;
+   transition: transform 0.5s;
+   width: 30%;
+
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.testimonial .col-3 .fa-quote-left{
+    color: #ff523b;
+}
+
+.col-3 p,h5{
+    color: #555;
+    font-size: 12px;
+}
+
+/* ---------------brands--------------- */
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0%);
+}
+
+
+/* ---------------footer--------------- */
+.footer{
+    background: black;
+    color: #8a8a8a;
+    font-size: 14px;
+
+}
+
+.footer h3{
+    color: white;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* --------------media query for menu--------------- */
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: #333333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    nav ul li a{
+        color: white;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+}
+
+
+/* --------all products page-------- */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+
+/* -----------media query for less than 600 screen size------------- */
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+    }
+}
+}
