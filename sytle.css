@@ -32,7 +32,19 @@ a {
 p {
     color: #555;
 }
-
+profile: {
+    display: "flex",
+    justifyContent: "space-between",
+    width: "400px",
+  },
+  userName: {
+    display: "flex",
+    alignItems: "center",
+  },
+  brandContainer: {
+    display: "flex",
+    alignItems: "center",
+  },
 .container {
     max-width: 1300px;
     margin: auto;
